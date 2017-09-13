@@ -254,7 +254,7 @@ public:
         }
         else if (type == "uint16_t")
         {
-            for (unsigned int i = 0; i<sx*sy*sz; i++)
+            for (unsigned long i = 0; i<sx*sy*sz; i++)
             {
                 uint16_t number;
                 infile.read ((char *)&number,sizeof (number));
@@ -265,7 +265,7 @@ public:
         }
         else if (type == "int32_t")
         {
-            for (unsigned int i = 0; i<sx*sy*sz; i++)
+            for (unsigned long i = 0; i<sx*sy*sz; i++)
             {
                 int32_t number;
                 infile.read ((char *)&number,sizeof (number));
@@ -276,7 +276,7 @@ public:
         }
         else if (type == "int")
         {
-            for (unsigned int i = 0; i<sx*sy*sz; i++)
+            for (unsigned long i = 0; i<sx*sy*sz; i++)
             {
                 int number;
                 infile.read ((char *)&number,sizeof (number));
